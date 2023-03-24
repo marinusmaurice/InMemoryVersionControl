@@ -11,10 +11,10 @@ Each snapshot does not override the previous one. Each snapshot is typically nam
 Each new snapshot has a pointer to which snapshot it is derived from. This maintains linearage. The repository can be a database or custom file format or even another list of file system entries. The repository doesn't need to reside on a local machine. A not often used feature is the commit to a totally different snapshot that is not a parent snapshot i.e. 'alternative way to fork'
 
 **checkout** - this is making an exact duplicate of a snapshot of the commited file system entries from the repository to the local disk for purposes of editing. One doesn't work on the snapshot file system entries directly. So checkout copies the file system entries from a selected snapshot from the repository to the local file system. There are different types of checkout
-1. Current snapshot, history and child snapshots.
+1. Current snapshot, history and child snapshots. (essentially everything)
 2. Current snapshot and child snapshots.
-3. Current snapshot and history.
-4. Current snapshot.
+3. Current snapshot and history. (from root to current snapshot following linearage)
+4. Current snapshot only.
 
 **fork** - forking is the similar to checkout except the duplicate is made within the repository and possibly given a new name. The linearage is maintained. However, the same thing as forking can be achieved via checkout, then commit, not to the immediate parent snapshot, but to the grand parent snapshot. It is desirable to use the explicit fork functionality instead of the 'workaround'.
 
