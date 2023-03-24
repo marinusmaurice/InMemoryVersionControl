@@ -21,7 +21,8 @@ Each new snapshot has a pointer to which snapshot it is derived from. This maint
 **Sample code**
 
 ` 
-class Program
+
+    class Program
     {
         static void Main(string[] args)
         {
