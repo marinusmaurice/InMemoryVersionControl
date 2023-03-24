@@ -19,6 +19,7 @@ Each new snapshot has a pointer to which snapshot it is derived from. This maint
 **fork** - forking is the similar to checkout except the duplicate is made within the repository and possibly given a new name. The linearage is maintained. However, the same thing as forking can be achieved via checkout, then commit, not to the immediate parent snapshot, but to the grand parent snapshot. It is desirable to use the explicit fork functionality instead of the 'workaround'.
 
 **Sample code**
+
 ` 
 class Program
     {
