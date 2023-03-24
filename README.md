@@ -1,4 +1,4 @@
-# VersionControlSystem - Basic File Version Control
+# VersionControlSystem - Basic In Memory File Version Control
 Simplified look at how the most basic file version control system functions
 
 The most basic used parts of version control are:
