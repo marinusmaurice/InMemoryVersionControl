@@ -41,7 +41,6 @@ Each new snapshot has a pointer to which snapshot it is derived from. This maint
             {
                 se.Add(DisplayFileSystemInfoAttributes(new DirectoryInfo(entry)));
             }
-            //  Loop through all the files in C.
             foreach (string entry in Directory.GetFiles(Environment.CurrentDirectory, "*", eo))
             {
                 se.Add(DisplayFileSystemInfoAttributes(new FileInfo(entry)));
@@ -66,7 +65,6 @@ Each new snapshot has a pointer to which snapshot it is derived from. This maint
             {
                 se.Add(DisplayFileSystemInfoAttributes(new DirectoryInfo(entry)));
             }
-            //  Loop through all the files in C.
             foreach (string entry in Directory.GetFiles(Environment.CurrentDirectory, "*", eo))
             {
                 se.Add(DisplayFileSystemInfoAttributes(new FileInfo(entry)));
